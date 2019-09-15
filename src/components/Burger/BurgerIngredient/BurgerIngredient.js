@@ -1,4 +1,4 @@
-import React, {Component} from React;
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 
@@ -35,10 +35,11 @@ class BurgerIngredient extends Component {
                 ingredient = null;
                 break;
         }
+        return ingredient;
     }
 }
 
-BurgerIngredient.PropTypes = {
+BurgerIngredient.propTypes = {
     type: PropTypes.string.isRequired
 }
 
